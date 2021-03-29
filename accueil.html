@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
-    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <title>CryptoLambo</title>
 </head>
 
 <body>
@@ -25,34 +26,37 @@
         </nav>
     </header>
     <main>
+        <div class="fotorama">
+            <img src="images/lambo1.jpg">
+            <img src="images/lambo2.jpg">
+            <img src="images/r5.jpg">
+        </div>
         <div class="image_accueil">
             <div>
-                <img src="image/btc.png" id="btc" />
-                <figcaption >
-                <h1 id="outputbtc"></h1>
+                <img src="images/btc.png"/>
+                <figcaption>
+                    <h1 id="outputbtc"></h1>
                 </figcaption>
             </div>
             <div>
-                <img src="image/eth.png" />
+                <img src="images/eth.png" />
                 <figcaption id="eth">
                     <h1 id="outputeth"></h1>
                 </figcaption>
             </div>
             <div>
-                <img src="image/monero.png" />
+                <img src="images/monero.png"/>
                 <figcaption id="xmr">
                     <h1 id="outputxmr"></h1>
                 </figcaption>
             </div>
             <div>
-                <img src="image/xvg.png" />
+                <img src="images/xvg.png" />
                 <figcaption id="xvg">
                     <h1 id="outputxvg"></h1>
                 </figcaption>
             </div>
         </div>
-        <!-- <input type="button" value="appel api crypto" onclick="buttonClickGET()"/>
-        <p id="zone_crypto">Bonjour</p> -->
     </main>
     <footer>
         <p class="copyright">Copyright 2021</p>

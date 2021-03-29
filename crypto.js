@@ -1,3 +1,4 @@
+//feed
 $(function(){
     $.ajax({
         url: 'https://api.n.exchange/en/api/v1/currency/', 
@@ -28,3 +29,4 @@ $(function(){
     });
 });
 
+//carousel

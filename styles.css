@@ -45,3 +45,22 @@ img {
     width: 300px;
     height: 300px;
 }
+
+.carousel {
+    position: relative;
+}
+
+.carousel__container::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.carousel__item {
+    float: left;
+}
+
+.fotorama {
+    display: flex;
+    justify-content: center;
+}
