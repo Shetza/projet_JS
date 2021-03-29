@@ -1,21 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
     <title>Document</title>
 </head>
+
 <body>
     <header>
-
+        <div class="title_header">
+            <h1>Devenez pauvre avec la crypto</h1>
+        </div>
+        <nav class="crumbs">
+            <ul>
+                <li class="crumb"><a href="accueil.html">Accueil</a></li>
+                <li class="crumb"><a href="gallery.html">Galerie</a></li>
+                <li class="crumb"><a href="jeux.html">Jeux</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-
+        <div class="image_accueil">
+            <div>
+                <img src="image/btc.png" id="btc" />
+                <figcaption >
+                <h1 id="outputbtc"></h1>
+                </figcaption>
+            </div>
+            <div>
+                <img src="image/eth.png" />
+                <figcaption id="eth">
+                    <h1 id="outputeth"></h1>
+                </figcaption>
+            </div>
+            <div>
+                <img src="image/monero.png" />
+                <figcaption id="xmr">
+                    <h1 id="outputxmr"></h1>
+                </figcaption>
+            </div>
+            <div>
+                <img src="image/xvg.png" />
+                <figcaption id="xvg">
+                    <h1 id="outputxvg"></h1>
+                </figcaption>
+            </div>
+        </div>
+        <!-- <input type="button" value="appel api crypto" onclick="buttonClickGET()"/>
+        <p id="zone_crypto">Bonjour</p> -->
     </main>
     <footer>
-        
+        <p class="copyright">Copyright 2021</p>
     </footer>
-    
+    <script src="crypto.js"></script>
 </body>
+
 </html>
