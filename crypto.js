@@ -29,4 +29,23 @@ $(function(){
     });
 });
 
-//carousel
+//dropdown
+
+//quand l'utilisateur clique sur le bouton, le .toggle montre le contenu du menu
+function functionDropdown() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // ferme le dropdown quand l'utilisateur clique en dehors du bouton
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      let dropdowns = document.getElementsByClassName("dropdown-content");
+      let i;
+      for (i = 0; i < dropdowns.length; i++) {
+        let openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
