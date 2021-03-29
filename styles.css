@@ -1,0 +1,47 @@
+header {
+    max-width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 525px) {
+    header {
+        display: block;
+    }
+}
+
+h1 {
+    color: rgb(255, 136, 0);
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.copyright {
+    color: rgb(255, 136, 0);
+}
+
+.image_accueil {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 1205px) {
+    .image_accueil {
+        display: block;
+    }
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
