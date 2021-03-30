@@ -89,3 +89,8 @@ img {
   .dropdown a:hover {background-color: #ddd;}
   
   .show {display: block;}
+
+  #in {
+      width: 30%;
+      height: 60px;
+  }
