@@ -1,11 +1,12 @@
 //feed
 $(document).ready(function () {
     $.ajax({
-        url: 'https://api.n.exchange/en/api/v1/currency/',
+        url: 'https://musing-ardinghelli-9cfa3b.netlify.app/v1.json',
         method: 'GET',
         dataType: 'json'
     }).done(function (reponse) {
         reponse.forEach(element => {
+            console.log(element);
             if (element.code === "BTC") {
                 const divbtc = document.querySelector("#outputbtc")
                 divbtc.innerText = element.name
